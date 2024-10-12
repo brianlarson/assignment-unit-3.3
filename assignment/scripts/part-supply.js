@@ -5,11 +5,13 @@ console.log('****** Part Supply *******');
 
 // 1. Create a variable called 'partsNeeded' with a value of the number 40.
 console.log('1. Create partsNeeded:');
+let partsNeeded = 40;
 
 
 // 2. Create a variable called 'supplyChanges' whose value is an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11.
 console.log('2. Create supplyChanges:');
+let supplyChanges = [3, 5, -6, 0, 7, 11];
 
 
 // 3. Create a variable called 'secondItem' and assign it the value of the second
@@ -41,7 +43,7 @@ console.log('6. Looping through supplyChanges to populate arrays with positive, 
 // ***** STRETCH GOALS *********************************************
 // 7. Rewrite the 'for' loop from #6 as a 'for...of' loop. Instead of 'positives',
 //    'negatives', and 'zeroes', create three new arrays named 'stretchPositives',
-//    'stretchNegatives', and 'stretchZeroes'. 
+//    'stretchNegatives', and 'stretchZeroes'.
 console.log('7. Looping through supplyChanges to populate more arrays with positive, negative, and zero values:');
 
 
@@ -51,7 +53,7 @@ console.log('7. Looping through supplyChanges to populate more arrays with posit
 console.log('8. Looping through supplyChanges to calculate the sum:');
 
 
-// 9. We have a large stash of parts in our warehouse that we 
+// 9. We have a large stash of parts in our warehouse that we
 //    need to box up and get ready for shipment. There are 572
 //    parts in total, and each box holds 7 parts.
 //    Create two variables:
