@@ -22,6 +22,7 @@ console.log('3. Access the second value of supplyChanges:');
 let secondItem = supplyChanges[1];
 console.log('Second item is', secondItem);
 
+
 // 4. The last value in the 'supplyChanges' array was added by mistake.
 //    Remove it from the array and store it inside a new variable called 'removedItem'.
 console.log('4. Remove the last value from supplyChanges:');
@@ -43,7 +44,22 @@ console.log('Supply changes are now', supplyChanges);
 //      - If the value is a negative number, push it into the 'negatives' array.
 //      - If the value is a zero, push it into the 'zeroes' array.
 console.log('6. Looping through supplyChanges to populate arrays with positive, negative, and zero values:');
-
+let positives = [];
+let negatives = [];
+let zeroes = [];
+for (i = 0; i < (supplyChanges.length -1); i++) {
+    let number = supplyChanges[i];
+    if (number > 0) {
+        positives.push(number);
+    } else if (number < 0) {
+        negatives.push(number);
+    } else {
+        zeroes.push(number);
+    }
+}
+console.log('Positives are', positives);
+console.log('Negatives are', negatives);
+console.log('Zeroes are', zeroes);
 
 
 
@@ -52,6 +68,21 @@ console.log('6. Looping through supplyChanges to populate arrays with positive, 
 //    'negatives', and 'zeroes', create three new arrays named 'stretchPositives',
 //    'stretchNegatives', and 'stretchZeroes'.
 console.log('7. Looping through supplyChanges to populate more arrays with positive, negative, and zero values:');
+let stretchPositives = [];
+let stretchNegatives = [];
+let stretchZeroes = [];
+for (const change of supplyChanges) {
+    if (change > 0) {
+        stretchPositives.push(change);
+    } else if (change < 0) {
+        stretchNegatives.push(change);
+    } else {
+        stretchZeroes.push(change);
+    }
+}
+console.log('Stretch positives are', stretchPositives);
+console.log('Stretch negatives are', stretchNegatives);
+console.log('Stretch zeroes are', stretchZeroes);
 
 
 // 8. Create a variable called 'totalParts' and assign it a value of 0.
