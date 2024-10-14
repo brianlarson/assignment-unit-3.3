@@ -91,7 +91,7 @@ console.log('Stretch zeroes are', stretchZeroes);
 console.log('8. Looping through supplyChanges to calculate the sum:');
 let totalParts = 0;
 for (const part of supplyChanges) {
-    totalParts = totalParts + part;
+    totalParts += part;
 }
 console.log('Total parts is', totalParts)
 
@@ -107,8 +107,6 @@ console.log('Total parts is', totalParts)
 //    the value of 'parts' should reflect how many parts are
 //    "left over," and the value of 'boxesFilled' should reflect
 //    how many boxes were filled.
-console.log('9. Filling boxes with a "while" loop');
-
 
 
 
